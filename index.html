@@ -84,20 +84,40 @@
       <h1>Let's Connect!</h2>
         <div class='formGroup'>
           <label for='name'>Enter Full Name</label><br />
-          <input type='text' id='name' placeholder='Full Name' />
+          <input type='text' id='Name' placeholder='Full Name' />
         </div>
         <div class='formGroup'>
           <label for='email'>Email</label><br />
-          <input type='text' id='email' placeholder='Email' />
+          <input type='text' id='Email' placeholder='Email' />
         </div>
         <div class='formGroup'>
           <label for='message'>Message</label><br />
           <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
         </div>
-        <button class='submitButton' onClick={submit()}>Connect</button>
+        <button class='submitButton' type="button" onClick="sendEmail(); reset(); ">Connect</button>
     </section>
   </main>
   <script src="main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        SecureToken: "0ec78eae-4cd5-4be9-9510-c2c4a398ec6a",
+        To: 'dayalsarkar505@gmail.com',
+        From: "dayalsarkar505@gmail.com",
+        Subject: "Contact form enquery",
+        Body: "Name : " + document.getElementById("Name").value
+          + "<br> Email : " + document.getElementById("Email").value           
+          + "<br> message : " + document.getElementById("message").value
+
+
+      }).then(
+        message => alert("Message Sent Successfully !")
+      );
+      
+    }
+     
+  </script>
 </body>
 
 </html>
