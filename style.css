@@ -48,6 +48,7 @@ body::before{
 body {
   font-family: "Poppins", sans-serif;
   background-image: url(https://cdn.wallpapersafari.com/25/42/qHkEfP.jpg );
+  background-color: black;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -92,7 +93,9 @@ main::-webkit-scrollbar{
   justify-content: space-between;
   width: 100%;
   border-bottom: 1.5px solid rgb(255 255 255 / 35%);
+ 
 }
+
 
 .navBar > h1,.navBar > navigationMenu{
   margin: 10px;
@@ -102,13 +105,13 @@ main::-webkit-scrollbar{
   padding: 5px 10px;
   margin-left: 10px; 
   text-decoration: none;
-  color: black;
+ color: black;
   display: inline-block;
 }
 
 .navigationMenu > a:hover{
   transition: ease-in-out 300ms;
-  background: white;
+  
 }
 
 @media only screen and (max-width: 760px){
@@ -140,6 +143,11 @@ main::-webkit-scrollbar{
 
 .herosectionDetails{
   text-align: center;
+  
+}
+
+.herosectionDetails span{
+  color: rgb(19, 115, 153);
 }
 
 .herosectionDetails > h1{
@@ -218,12 +226,19 @@ main::-webkit-scrollbar{
 .projectContainer{
   display: flex;
   width: 90%;
+  
 }
 
 .projectContainer > img{
   width: 60px;
   height: 60px;
-  padding-right: 10px;
+  padding: 7px;
+  margin-right: 10px;
+  border-radius: 3px;
+  &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
 }
 
 .projectContainer > .projectDescription > h4{
@@ -244,11 +259,11 @@ main::-webkit-scrollbar{
   padding: 1rem;
 }
 
-.contactForm > .formGroup{
+.contactForm  .formGroup{
   margin-bottom: 1rem;
 }
 
-.formGroup > input, .formGroup > textarea{
+.formGroup  input, .formGroup  textarea{
   width: 100%;
   padding: 5px 10px;
   margin-top: 5px;

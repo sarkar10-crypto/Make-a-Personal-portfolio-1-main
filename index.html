@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="./images/GG.jpg">
   <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </head>
 
@@ -47,34 +48,52 @@
         <img title='Firebase' src='./images/firebase.svg'>
         <img title='Redux' src='./images/redux.svg'>
         <img title='java' src='./images/java.png'>
+        <img title='sass' src='./images/sass.svg'>
+        <img title='GitHub' src='./images/github-142.svg'>
+        <img title='Tailwindcss' src='./images/tailwindcss-icon.svg'>
+        <img title='Canva' src='./images/canva.svg'>
       </div>
       <div class='projects' id='projects'>
         <h1 class='cardHeading'>Projects</h1>
         <div class='projectContainer'>
-          <img src='./images/Zomato.png' />
+          <img src='./images/p.png' />
           <div class='projectDescription'>
-            <h4>Zomato Landing Page</h4>
-            <p>It is a colone interface of Original Registered wesite 
-              Tools used : HTML , CSS 
+            <h4>ByteBuZZ</h4>
+            <p>ByteBuZZ delivered a responsive, high-performance user experience lists of Development related articles.
+              <br><br>
+              <span style="color: rgb(9, 17, 155); font-weight: 600;">Tools used :</span> React.js,CSS,Canva,Context API,useReducer,custom hooks,Dynamic API Integration. 
+              <a style="text-decoration: none;" href="https://bytebuzz7.netlify.app/">
+                <span style="color: red;">Live</span>
+              </a>
             </p>
           </div>
         </div>
         <div class='projectContainer'>
-          <img src='./images/Tasky.png' />
+          <img src='./images/s.png' />
           <div class='projectDescription'>
             <h4>Tasky Application</h4>
-            <p>Used to store some tasks with it's perticular links in Local heroSection
-              Tools used : Javascript , Html , Css.
+            <p>The Tasky Application enables users to create, view, edit, and delete tasks
+            with details like title, description, type, and optional images.
+              <br><br>
+            <span style="color: rgb(9, 17, 155); font-weight: 600;">Tools used :</span> Javascript , Html , Css , Bootstrap , Canva.
+              <a style="text-decoration: none;" href="https://tasky7.netlify.app/">
+              <span style="color: red;">Live</span>
+              </a>
             </p>
+            
           </div>
         </div>
         <div class='projectContainer'>
-          <img src='./images/calc.png' />
+          <img src='./images/ConvoHive.png' />
           <div class='projectDescription'>
-            <h4>Simple interest Calculator</h4>
+            <h4>ConvoHive</h4>
             <p>
-              It is used to calculate simple interest
-               Tools used,HTML,CSS.
+             It is a feature-rich and responsive chat application I’ve built using a modern tech stack.This project combines my passion for creating user-friendly applications with the power of cutting-edge tools.
+              <br><br>
+              <span style="color: rgb(9, 17, 155); font-weight: 600;">Tools used :</span> React.js , Firebase , Css , vite , Vercel ,GitHub , Canva.
+              <a style="text-decoration: none;" href="https://convo-hive.vercel.app/">
+                <span style="color: red;">Live</span>
+              </a>
             </p>
           </div>
         </div>
@@ -94,7 +113,7 @@
           <label for='message'>Message</label><br />
           <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
         </div>
-        <button class='submitButton' type="button" onClick="sendEmail(); location.reload();">Connect</button>
+        <button class='submitButton' type="button" onClick="sendEmail();">Connect</button>
          
     </section>
   </main>
@@ -113,8 +132,11 @@
 
 
       }).then(
-        message => alert("Message Sent Successfully !")
-      );
+        message => {alert("Message Sent Successfully !");
+        location.reload();
+    }
+    );
+
       
     }
      
