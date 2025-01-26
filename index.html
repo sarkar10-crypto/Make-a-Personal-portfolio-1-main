@@ -21,13 +21,20 @@
         <a href="#contactForm">Let's Connect!</a>
       </div>
     </nav>
-    <section class='heroSection'>
-      <img class='profileImage' src= "images/profile1.jpg">
+
+    
+    <section class='heroSection'>  
+      <div class="profile">
+        <img class='profileImage' src="images/profile1.jpg">
+      </div>
       <div class="herosectionDetails">
-        <h1>Hi I'm</h1>
-        <h3>Dayal sarkar | <span class="text"></span></h3>
+        <div class="status">
+          <h1>Hi I'm</h1>
+          <h3>Dayal sarkar | <span class="text"></span></h3>
+        </div>
       </div>
     </section>
+
     <section class='aboutMe' id='aboutMe'>
       <h1>What I Do...</h1>
       <p>A Frontend Developer, I Am Always Striving To Bring 100% To The Work That I Do. I Have Developed The Passion For Not
@@ -58,14 +65,21 @@
         <div class='projectContainer'>
           <img src='./images/p.png' />
           <div class='projectDescription'>
-            <h4>ByteBuZZ</h4>
-            <p>ByteBuZZ delivered a responsive, high-performance user experience lists of Development related articles.
+            
+
+            <h4>ConvoHive</h4>
+            <p>
+              ByteBuZZ delivered a responsive, high-performance user experience lists of Development related articles.
               <br><br>
-              <span style="color: rgb(9, 17, 155); font-weight: 600;">Tools used :</span> React.js,CSS,Canva,Context API,useReducer,custom hooks,Dynamic API Integration. 
+              <span style="color: rgb(9, 17, 155); font-weight: 600;">Tools used :</span> React.js , Context API , useReducer , custom hooks , Dynamic API Integration , Css , vite , Vercel , GitHub , Canva.
               <a style="text-decoration: none;" href="https://bytebuzz7.netlify.app/">
                 <span style="color: red;">Live</span>
               </a>
             </p>
+
+
+
+
           </div>
         </div>
         <div class='projectContainer'>
@@ -113,10 +127,33 @@
           <label for='message'>Message</label><br />
           <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
         </div>
-        <button class='submitButton' type="button" onClick="sendEmail();">Connect</button>
-         
-    </section>
+        <button class='submitButton' type="button" onClick="sendEmail();">Connect</button>  
+    </section> 
+    
+      <div class='footer'>
+        <span style="color: black;">Developed by @ 🅳🅰🆈🅰🅻🆂🅰🆁🅺🅰🆁 <span>connect me Through ---->
+          
+        </span></span>
+        
+        <div class="fimage">
+          
+          <a href="https://www.linkedin.com/in/dayal-sarkar/">
+            <img src='./images/linkedin-svgrepo-com.svg' />
+          </a>
+          <a href="https://github.com/sarkar10-crypto">
+            <img src='./images/github-142.svg' />
+          </a>
+          <a href="https://dev.to/wicked_sarkar">
+            <img src='./images/dev.png' />
+          </a>
+        </div>
+        
+      </div>
+   
+    
+    
   </main>
+  
   <script src="main.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
